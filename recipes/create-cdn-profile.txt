@@ -1,0 +1,18 @@
+# Create a CDN profile
+az cdn profile create --name $cdnProfile --sku $cdnSku
+
+# Create a CDN endpoint
+az cdn endpoint create --name $cdnEndpointName --profile-name $cdnProfile --origin $cdnOrigin --origin-host-header $cdnOrigin --enable-compression
+
+# Enforce HTTPS
+az cdn endpoint rule add -n $cdnEndpointName --profile-name $cdnProfile --rule-name enforcehttps --order 1 --action-name "UrlRedirect"  --redirect-type Found --redirect-protocol HTTPS --match-variable RequestScheme --operator Equal --match-value HTTP
+
+# Make sure CNAME entry already exists
+# CNAME $site_name $finalEndpoint
+
+az cdn custom-domain create --endpoint-name $cdnEndpointName --profile-name $cdnProfile --name $site_name --hostname $fqdn
+
+# Enable HTTPS
+az cdn custom-domain enable-https --endpoint-name $cdnEndpointName --profile-name $cdnProfile --name $site_name
+
+

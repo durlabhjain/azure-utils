@@ -1,0 +1,5 @@
+# Create storage account
+az storage account create --name $storage_account_name --sku $storageSku --kind $storageKind
+
+# Create static website
+az storage blob service-properties update --account-name $storage_account_name --static-website --index-document $index_document

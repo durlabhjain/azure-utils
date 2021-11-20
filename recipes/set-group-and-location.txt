@@ -1,0 +1,2 @@
+az configure -d group=$resource_group
+az configure -d location=$location
