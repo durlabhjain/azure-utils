@@ -1,6 +1,6 @@
 {
   "name": "@durlabh/azure-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "license": "MIT",
   "description": "Azure deployment helper utilities",

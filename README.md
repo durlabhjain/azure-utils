@@ -83,6 +83,7 @@ Other parameters derived from this:
 --cdnSku                -   Azure CDN SKU
 --indexDoc              -   Azure Static site default document - default: index.html
 --nonInteractive        -   Run in silent mode - without prompts
+--dryRun                -   Just show the commands - do not execute
 --action                -   Action for non interactive mode. Options:
                             create-static-site
                             deploy-static-site
