@@ -1,7 +1,7 @@
 {
     "subscriptionId": "",
-    "groupObjectId": "",
+    "userGroup": "",
     "fqdn": "",
-    "resource_group":  "",
+    "resourceGroup":  "",
     "location": ""
 }
