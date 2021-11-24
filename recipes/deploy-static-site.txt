@@ -4,4 +4,4 @@ az storage blob sync -c '$web' --account-name "${storageAccount}" -s ./build
 
 # Purge CDN cache
 
-az cdn endpoint purge --no-wait --content-paths  "/*" --profile-name "${cdnProfile}" --name "${cdnEndpointName}" --resource-group "${resourceGroup}
+az cdn endpoint purge --no-wait --content-paths  "/*" --profile-name "${cdnProfile}" --name "${cdnEndpointName}" --resource-group "${resourceGroup}"
