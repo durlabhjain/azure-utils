@@ -87,21 +87,3 @@ Other parameters derived from this:
                             create-static-site
                             deploy-static-site
 </pre>
-
-
-            .option('-s, --subscriptionId <name>', 'subscription id', config.subscriptionId)
-            .option('-g, --resourceGroup <name>', 'resource group', config.resourceGroup)
-            .option('-f, --fqdn <name>', 'fully qualified domain name to derive other parameters', config.fqdn)
-            .option('-cs, --cdnSite <name>', 'cdn site name', config.cdnSite)
-            .option('-co, --cdnOrigin <name>', 'cdn origin', config.cdnOrigin)
-            .option('-l, --location <name>', 'fully qualified domain name to derive other parameters', config.location)
-            .option('-a, --storageAccount <name>', 'storage account', config.storageAccount)
-            .option('-p, --profile <name>', 'cdn profile name', config.cdnProfile)
-            .option('-e, --endpoint <name>', 'cdn endpoint', config.cdnEndpoint)
-            .option('-ss --storageSku <name>', 'storage sku', config.storageSku || 'Standard_RAGRS')
-            .option('-sk --storageKind <name>', 'storage kind', config.storageKind || 'StorageV2')
-            .option('-ug --userGroup <name>', 'user group', config.userGroup || 'cdn')
-            .option('--cdnSku <name>', 'cdn sku', config.cdnSku || 'Standard_Microsoft')
-            .option('--indexDoc <name>', 'index document', config.indexDocument || 'index.html')
-            .option('--nonInteractive', 'non interactive mode')
-            .option('--action <name>', 'action');
