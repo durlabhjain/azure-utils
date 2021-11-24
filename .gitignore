@@ -1,4 +1,4 @@
-config.json
+/deploy/config.json
 node_modules
 .DS_Store
-config.override.json
+/deploy/config.override.json

@@ -1,4 +1,4 @@
-const defaultTemplate = /\${((\w+)\.)?(\w+)}/g;
+const defaultTemplate = /\${((\w+)\.)?(\w+)}/gm;
 
 /**
  * @description Replaces the given tags in the given source with the given values.
@@ -26,5 +26,6 @@ const replaceTags = function (source, tags, { template = defaultTemplate, keepMi
 };
 
 export default {
+    defaultTemplate,
     replaceTags
 };

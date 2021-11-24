@@ -1,2 +1,3 @@
-az configure -d group=$resource_group
-az configure -d location=$location
+az configure -d subscriptionId=${subscriptionId}
+az configure -d group=${resourceGroup}
+az configure -d location=${location}

@@ -1,11 +1,15 @@
 {
-  "name": "azure-utils",
+  "name": "@durlabh/azure-utils",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "description": "Generate statements to create azure static site",
+  "description": "Azure deployment helper utilities",
   "type": "module",
+  "bin": {
+    "azure-utils": "./bin/index.js"
+  },
   "dependencies": {
+    "commander": "^8.3.0",
     "fs-extra": "^10.0.0",
     "prompts": "^2.4.2"
   }

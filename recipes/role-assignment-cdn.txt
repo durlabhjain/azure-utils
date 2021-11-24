@@ -1,5 +1,5 @@
 # Assign contributor permissions to the CDN
 
-az role assignment create --role "CDN Profile Reader" --assignee $groupObjectId --scope /subscriptions/$subscriptionId/resourceGroups/$resource_group/providers/Microsoft.Cdn/profiles/$cdnProfile
+az role assignment create --role "CDN Profile Reader" --assignee ${userGroup} --scope /subscriptions/${subscriptionId}/resourceGroups/${resourceGroup}/providers/Microsoft.Cdn/profiles/${cdnProfile}
 
-az role assignment create --role "CDN Endpoint Reader" --assignee $groupObjectId --scope /subscriptions/$subscriptionId/resourceGroups/$resource_group/providers/Microsoft.Cdn/profiles/$cdnProfile/endpoints/$cdnEndpointName
+az role assignment create --role "CDN Endpoint Reader" --assignee ${userGroup} --scope /subscriptions/${subscriptionId}/resourceGroups/${resourceGroup}/providers/Microsoft.Cdn/profiles/${cdnProfile}/endpoints/${cdnEndpointName}
