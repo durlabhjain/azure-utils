@@ -1,0 +1,7 @@
+# Make sure CNAME entry already exists
+# CNAME ${cdnSite} ${finalEndpoint}
+
+az cdn custom-domain create --endpoint-name ${cdnEndpointName} --profile-name ${cdnProfile} --name ${cdnSite} --hostname ${fqdn}
+
+# Enable HTTPS
+az cdn custom-domain enable-https --endpoint-name ${cdnEndpointName} --profile-name ${cdnProfile} --name ${cdnSite}
