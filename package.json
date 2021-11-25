@@ -8,9 +8,18 @@
   "bin": {
     "azure-utils": "./bin/index.js"
   },
+  "scripts" : { 
+    "release" : "standard-version"
+  },
   "dependencies": {
     "commander": "^8.3.0",
     "fs-extra": "^10.0.0",
     "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "husky": "^7.0.4",
+    "standard-version": "^9.3.2"
   }
 }
