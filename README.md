@@ -71,17 +71,17 @@ Other parameters derived from this:
 -s, --subscriptionId    -   Azure Subscription Id
 -g, --group             -   Azure resource group
 -f, --fqdn              -   Fully qualified domain name to derive other parameters
--cs, --cdnSite          -   Azure CDN Site name
--co, --cdnOrigin        -   Azure CDN Origin
 -l, --location          -   Location for Azure Storage Account - default: eastus
 -a, --storageAccount    -   Azure Storage Account
--p, --profile           -   Azure CDN Profile Name
--e, --endpoint          -   Azure CDN Endpoint
 -ss, --storageSku       -   Azure Storage SKU - default: Standard_RAGRS
 -sk, --storageKind      -   Azure Storage Type - default: StorageV2
--ug, --userGroup        -   Azure User Group - default: cdn
+-cs, --cdnSite          -   Azure CDN Site name
+-co, --cdnOrigin        -   Azure CDN Origin
+-p, --cdnProfile        -   Azure CDN Profile Name
+-e, --cdnEndpoint       -   Azure CDN Endpoint
 --cdnSku                -   Azure CDN SKU
---indexDoc              -   Azure Static site default document - default: index.html
+-ug, --userGroup        -   Azure User Group - default: cdn
+--indexDocument         -   Azure Static site default document - default: index.html
 --nonInteractive        -   Run in silent mode - without prompts
 --dryRun                -   Just show the commands - do not execute
 --action                -   Action for non interactive mode. Options:
