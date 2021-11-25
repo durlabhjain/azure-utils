@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/durlabhjain/azure-utils/compare/v1.1.0...v1.1.1) (2021-11-25)
+
+
+### Bug Fixes
+
+* action parameter not working in interactie mode ([a0f1285](https://github.com/durlabhjain/azure-utils/commit/a0f1285070b1e8f994f0fc62f6dbdd6b00c99b80))
+* show/ execute CNAMe settings at last while createing static sites ([cd590d9](https://github.com/durlabhjain/azure-utils/commit/cd590d949a944fb27e53375fa87f62bbb62e33f9))
+
 ## 1.1.0 (2021-11-25)
 
 
