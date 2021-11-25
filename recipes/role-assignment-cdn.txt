@@ -2,4 +2,4 @@
 
 az role assignment create --role "CDN Profile Reader" --assignee ${userGroup} --scope /subscriptions/${subscriptionId}/resourceGroups/${resourceGroup}/providers/Microsoft.Cdn/profiles/${cdnProfile}
 
-az role assignment create --role "CDN Endpoint Reader" --assignee ${userGroup} --scope /subscriptions/${subscriptionId}/resourceGroups/${resourceGroup}/providers/Microsoft.Cdn/profiles/${cdnProfile}/endpoints/${cdnEndpointName}
+az role assignment create --role "CDN Endpoint Contributor" --assignee ${userGroup} --scope /subscriptions/${subscriptionId}/resourceGroups/${resourceGroup}/providers/Microsoft.Cdn/profiles/${cdnProfile}/endpoints/${cdnEndpointName}
