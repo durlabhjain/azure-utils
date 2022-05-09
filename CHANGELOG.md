@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/durlabhjain/azure-utils/compare/v1.1.1...v1.1.2) (2022-05-09)
+
+
+### Bug Fixes
+
+* made parameters platform agnostic ([01f22e9](https://github.com/durlabhjain/azure-utils/commit/01f22e99e707fff15c411890839f79ce59f1fea5))
+
 ### [1.1.1](https://github.com/durlabhjain/azure-utils/compare/v1.1.0...v1.1.1) (2021-11-25)
 
 
