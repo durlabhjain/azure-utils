@@ -5,6 +5,6 @@ az cdn profile create --name ${cdnProfile} --sku ${cdnSku}
 az cdn endpoint create --name ${cdnEndpointName} --profile-name ${cdnProfile} --origin ${cdnOrigin} --origin-host-header ${cdnOrigin} --enable-compression
 
 # Enforce HTTPS
-az cdn endpoint rule add -n ${cdnEndpointName} --profile-name ${cdnProfile} --rule-name enforcehttps --order 1 --action-name "UrlRedirect"  --redirect-type Found --redirect-protocol HTTPS --match-variable RequestScheme --operator Equal --match-value HTTP
+az cdn endpoint rule add -n ${cdnEndpointName} --profile-name ${cdnProfile} --rule-name enforcehttps --order 1 --action-name 'UrlRedirect'  --redirect-type Found --redirect-protocol HTTPS --match-variable RequestScheme --operator Equal --match-value HTTP
 
 

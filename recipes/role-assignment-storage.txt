@@ -1,3 +1,3 @@
 # Assign contributor permissions to the group
 
-az role assignment create --role "Storage Account Contributor" --assignee ${userGroup} --scope /subscriptions/${subscriptionId}/resourceGroups/${resourceGroup}/providers/Microsoft.Storage/storageAccounts/${storageAccount}
+az role assignment create --role 'Storage Account Contributor' --assignee ${userGroup} --scope /subscriptions/${subscriptionId}/resourceGroups/${resourceGroup}/providers/Microsoft.Storage/storageAccounts/${storageAccount}
